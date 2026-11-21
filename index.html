@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vellore Institute of Engineering & Technology | Student & Academic Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Notice Ticker -->
+    <div class="notice-bar">
+        <div class="container notice-flex">
+            <span class="notice-tag">Admissions 2026-27</span>
+            <p class="notice-text" id="notice-ticker">Applications open for B.E. / B.Tech and M.E. / M.Tech programmes. Entrance counselling begins June 15.</p>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="brand">
+                <div class="brand-logo">VIET</div>
+                <div class="brand-text">
+                    <span class="brand-name">Vellore Institute</span>
+                    <span class="brand-sub">of Engineering & Technology</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#departments" class="nav-link">Departments</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#faculty" class="nav-link">Faculty</a>
+                <a href="#students" class="nav-link">Students</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#contact" class="nav-btn">Enquire Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Homepage / Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">Autonomous Institution • NAAC 'A+' Accredited</span>
+                <h1>Shaping Practical Engineers for Tomorrow's Industry</h1>
+                <p>Located in Tamil Nadu, VIET combines rigorous academic foundations with hands-on laboratory training, industry internships, and research-driven learning.</p>
+                <div class="hero-actions">
+                    <a href="#courses" class="btn btn-primary">Explore Programmes</a>
+                    <a href="#contact" class="btn btn-outline">Admission Enquiry</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>94%</strong>
+                        <span>Placement Record</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>3,800+</strong>
+                        <span>Active Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>210+</strong>
+                        <span>Faculty Members</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Announcements & Quick Portal Board -->
+            <aside class="announcement-card">
+                <div class="card-header">
+                    <h3>Campus Announcements</h3>
+                    <span class="live-dot">Live Updates</span>
+                </div>
+                <ul class="announcement-list">
+                    <li>
+                        <span class="ann-date">18 Nov 2026</span>
+                        <p><strong>End-Semester Exam Timetable:</strong> Even semester theory exam schedules published on the student intranet.</p>
+                    </li>
+                    <li>
+                        <span class="ann-date">12 Nov 2026</span>
+                        <p><strong>TCS & Zoho Campus Drive:</strong> Pre-placement talk scheduled at Main Auditorium for final-year CSE, IT & ECE students.</p>
+                    </li>
+                    <li>
+                        <span class="ann-date">04 Nov 2026</span>
+                        <p><strong>National Level Technical Symposium:</strong> Paper submission deadline extended for 'TechnoVanza 2026'.</p>
+                    </li>
+                    <li>
+                        <span class="ann-date">28 Oct 2026</span>
+                        <p><strong>AICTE Idea Lab Grant:</strong> Mechanical & EEE departments receive ₹45 Lakhs funding for EV battery testing setup.</p>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Principal's Welcome Section -->
+    <section class="welcome-strip">
+        <div class="container welcome-box">
+            <div class="welcome-text">
+                <h2>Welcome from the Principal's Desk</h2>
+                <p>"At Vellore Institute of Engineering & Technology, we believe engineering education goes far beyond textbooks. Over the past 24 years, our focus has been on building strong fundamentals, encouraging curiosity in our labs, and preparing students to solve real-world problems with integrity."</p>
+                <div class="principal-sign">
+                    <strong>Dr. R. Subramanian, M.E., Ph.D.</strong>
+                    <span>Principal, VIET (Former Senior Scientist, ISRO)</span>
+                </div>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-tile">
+                    <h4>120+ Recruiters</h4>
+                    <p>Consistent campus placements across core engineering and IT product firms.</p>
+                </div>
+                <div class="highlight-tile">
+                    <h4>42 Research Labs</h4>
+                    <p>Dedicated centres for VLSI, Robotics, IoT, Structural Testing, and AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Departments Section -->
+    <section id="departments" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academic Wings</span>
+                <h2>Engineering Departments</h2>
+                <p>Six specialized departments equipped with modern laboratories, experienced faculty, and active student chapters.</p>
+            </div>
+
+            <div class="dept-grid" id="dept-grid">
+                <article class="dept-card" data-dept="CSE">
+                    <div class="dept-code">CSE</div>
+                    <h3>Computer Science & Engineering</h3>
+                    <p>Focuses on algorithms, cloud computing, artificial intelligence, cybersecurity, and full-stack software systems.</p>
+                    <div class="dept-meta">
+                        <span>Intake: 180 Seats</span>
+                        <span>Labs: 8</span>
+                    </div>
+                    <button class="text-btn view-dept-btn" data-dept="CSE">View Details &rarr;</button>
+                </article>
+
+                <article class="dept-card" data-dept="ECE">
+                    <div class="dept-code">ECE</div>
+                    <h3>Electronics & Communication</h3>
+                    <p>Covers embedded systems, VLSI chip design, wireless communication, signal processing, and IoT hardware.</p>
+                    <div class="dept-meta">
+                        <span>Intake: 120 Seats</span>
+                        <span>Labs: 7</span>
+                    </div>
+                    <button class="text-btn view-dept-btn" data-dept="ECE">View Details &rarr;</button>
+                </article>
+
+                <article class="dept-card" data-dept="EEE">
+                    <div class="dept-code">EEE</div>
+                    <h3>Electrical & Electronics</h3>
+                    <p>Specializes in power systems, electric vehicle drives, renewable energy grids, and industrial automation.</p>
+                    <div class="dept-meta">
+                        <span>Intake: 60 Seats</span>
+                        <span>Labs: 6</span>
+                    </div>
+                    <button class="text-btn view-dept-btn" data-dept="EEE">View Details &rarr;</button>
+                </article>
+
+                <article class="dept-card" data-dept="MECH">
+                    <div class="dept-code">MECH</div>
+                    <h3>Mechanical Engineering</h3>
+                    <p>Emphasizes CAD/CAM, thermal engineering, robotics, additive manufacturing, and automotive design.</p>
+                    <div class="dept-meta">
+                        <span>Intake: 120 Seats</span>
+                        <span>Labs: 9</span>
+                    </div>
+                    <button class="text-btn view-dept-btn" data-dept="MECH">View Details &rarr;</button>
+                </article>
+
+                <article class="dept-card" data-dept="CIVIL">
+                    <div class="dept-code">CIVIL</div>
+                    <h3>Civil Engineering</h3>
+                    <p>Trains students in structural analysis, geotechnical engineering, sustainable construction, and urban surveying.</p>
+                    <div class="dept-meta">
+                        <span>Intake: 60 Seats</span>
+                        <span>Labs: 6</span>
+                    </div>
+                    <button class="text-btn view-dept-btn" data-dept="CIVIL">View Details &rarr;</button>
+                </article>
+
+                <article class="dept-card" data-dept="IT">
+                    <div class="dept-code">IT</div>
+                    <h3>Information Technology</h3>
+                    <p>Dedicated to enterprise software architecture, data analytics, mobile computing, and network administration.</p>
+                    <div class="dept-meta">
+                        <span>Intake: 120 Seats</span>
+                        <span>Labs: 6</span>
+                    </div>
+                    <button class="text-btn view-dept-btn" data-dept="IT">View Details &rarr;</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Courses Section -->
+    <section id="courses" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academic Programmes</span>
+                <h2>Undergraduate & Postgraduate Courses</h2>
+                <p>Affiliated to Anna University and approved by AICTE, New Delhi.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Programmes</button>
+                <button class="filter-btn" data-filter="UG">Undergraduate (B.E. / B.Tech)</button>
+                <button class="filter-btn" data-filter="PG">Postgraduate (M.E. / M.Tech / MBA)</button>
+            </div>
+
+            <div class="courses-grid" id="courses-grid">
+                <div class="course-card" data-level="UG">
+                    <div class="course-top">
+                        <span class="course-level">UG • 4 Years</span>
+                        <span class="course-fee">₹85,000 / yr</span>
+                    </div>
+                    <h3>B.E. Computer Science & Engineering</h3>
+                    <p>Eight-semester full-time degree covering core computing, OS, DBMS, machine learning, and mandatory industry internship.</p>
+                    <div class="course-footer">
+                        <span>Eligibility: 10+2 (PCM)</span>
+                        <a href="#contact" class="apply-link">Apply &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="UG">
+                    <div class="course-top">
+                        <span class="course-level">UG • 4 Years</span>
+                        <span class="course-fee">₹80,000 / yr</span>
+                    </div>
+                    <h3>B.E. Electronics & Communication Engg.</h3>
+                    <p>Comprehensive programme in analog/digital circuits, microprocessors, optical communication, and embedded design.</p>
+                    <div class="course-footer">
+                        <span>Eligibility: 10+2 (PCM)</span>
+                        <a href="#contact" class="apply-link">Apply &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="UG">
+                    <div class="course-top">
+                        <span class="course-level">UG • 4 Years</span>
+                        <span class="course-fee">₹75,000 / yr</span>
+                    </div>
+                    <h3>B.E. Mechanical Engineering</h3>
+                    <p>Hands-on curriculum blending thermodynamics, fluid mechanics, CNC machining, and electric vehicle powertrain fundamentals.</p>
+                    <div class="course-footer">
+                        <span>Eligibility: 10+2 (PCM)</span>
+                        <a href="#contact" class="apply-link">Apply &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="UG">
+                    <div class="course-top">
+                        <span class="course-level">UG • 4 Years</span>
+                        <span class="course-fee">₹85,000 / yr</span>
+                    </div>
+                    <h3>B.Tech. Information Technology</h3>
+                    <p>Industry-aligned coursework in web engineering, cloud infrastructure, DevOps, and enterprise database management.</p>
+                    <div class="course-footer">
+                        <span>Eligibility: 10+2 (PCM)</span>
+                        <a href="#contact" class="apply-link">Apply &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="PG">
+                    <div class="course-top">
+                        <span class="course-level">PG • 2 Years</span>
+                        <span class="course-fee">₹65,000 / yr</span>
+                    </div>
+                    <h3>M.E. Computer Science & Engineering</h3>
+                    <p>Research-focused postgraduate programme in distributed systems, deep learning, and high-performance computing.</p>
+                    <div class="course-footer">
+                        <span>Eligibility: B.E./B.Tech + GATE/TANCET</span>
+                        <a href="#contact" class="apply-link">Apply &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="PG">
+                    <div class="course-top">
+                        <span class="course-level">PG • 2 Years</span>
+                        <span class="course-fee">₹60,000 / yr</span>
+                    </div>
+                    <h3>M.E. VLSI Design</h3>
+                    <p>Specialized training in CMOS analog design, FPGA prototyping, physical verification, and semiconductor testing.</p>
+                    <div class="course-footer">
+                        <span>Eligibility: B.E. ECE/EEE + GATE/TANCET</span>
+                        <a href="#contact" class="apply-link">Apply &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="PG">
+                    <div class="course-top">
+                        <span class="course-level">PG • 2 Years</span>
+                        <span class="course-fee">₹60,000 / yr</span>
+                    </div>
+                    <h3>M.E. Structural Engineering</h3>
+                    <p>Advanced study in earthquake-resistant design, finite element analysis, pre-stressed concrete, and bridge engineering.</p>
+                    <div class="course-footer">
+                        <span>Eligibility: B.E. Civil + GATE/TANCET</span>
+                        <a href="#contact" class="apply-link">Apply &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="course-card" data-level="PG">
+                    <div class="course-top">
+                        <span class="course-level">PG • 2 Years</span>
+                        <span class="course-fee">₹70,000 / yr</span>
+                    </div>
+                    <h3>Master of Business Administration (MBA)</h3>
+                    <p>Dual-specialization management degree in Operations, Finance, HR, and Business Analytics for engineering and arts graduates.</p>
+                    <div class="course-footer">
+                        <span>Eligibility: Any Degree + TANCET/MAT</span>
+                        <a href="#contact" class="apply-link">Apply &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Faculty Section -->
+    <section id="faculty" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academic Leadership</span>
+                <h2>Our Faculty</h2>
+                <p>Dedicated educators and researchers mentoring students across classrooms and laboratories.</p>
+            </div>
+
+            <div class="faculty-controls">
+                <label for="faculty-dept-select">Filter by Department:</label>
+                <select id="faculty-dept-select">
+                    <option value="ALL">All Departments</option>
+                    <option value="CSE">Computer Science (CSE)</option>
+                    <option value="ECE">Electronics & Comm. (ECE)</option>
+                    <option value="MECH">Mechanical Engg. (MECH)</option>
+                    <option value="CIVIL">Civil Engineering (CIVIL)</option>
+                    <option value="EEE">Electrical Engg. (EEE)</option>
+                    <option value="IT">Information Tech. (IT)</option>
+                </select>
+            </div>
+
+            <div class="faculty-grid" id="faculty-grid">
+                <div class="faculty-card" data-dept="CSE">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Dr. Karthik Narayanan">
+                    <div class="faculty-info">
+                        <span class="faculty-dept">CSE</span>
+                        <h3>Dr. Karthik Narayanan</h3>
+                        <p class="designation">Professor & Head of Department</p>
+                        <p class="qual">Ph.D. (IIT Madras) • 18 Yrs Experience</p>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-dept="ECE">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Dr. Meenakshi Sundaram">
+                    <div class="faculty-info">
+                        <span class="faculty-dept">ECE</span>
+                        <h3>Dr. S. Meenakshi</h3>
+                        <p class="designation">Professor & Dean (Academics)</p>
+                        <p class="qual">Ph.D. (Anna University) • 16 Yrs Experience</p>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-dept="MECH">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Dr. Arvind Krishnamurthy">
+                    <div class="faculty-info">
+                        <span class="faculty-dept">MECH</span>
+                        <h3>Dr. Arvind Krishnamurthy</h3>
+                        <p class="designation">Associate Professor</p>
+                        <p class="qual">Ph.D. (NIT Trichy) • 14 Yrs Experience</p>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-dept="IT">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Prof. Divya Bharathi">
+                    <div class="faculty-info">
+                        <span class="faculty-dept">IT</span>
+                        <h3>Prof. Divya Bharathi</h3>
+                        <p class="designation">Assistant Professor (Senior Grade)</p>
+                        <p class="qual">M.E., (Ph.D.) • 11 Yrs Experience</p>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-dept="EEE">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Dr. Prakash Rajendran">
+                    <div class="faculty-info">
+                        <span class="faculty-dept">EEE</span>
+                        <h3>Dr. Prakash Rajendran</h3>
+                        <p class="designation">Professor & HoD</p>
+                        <p class="qual">Ph.D. (IISc Bangalore) • 19 Yrs Experience</p>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-dept="CIVIL">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=400&q=80" alt="Prof. Anitha Selvam">
+                    <div class="faculty-info">
+                        <span class="faculty-dept">CIVIL</span>
+                        <h3>Prof. Anitha Selvam</h3>
+                        <p class="designation">Associate Professor</p>
+                        <p class="qual">M.E. Structural Engg. • 13 Yrs Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Students & Achievements Section -->
+    <section id="students" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Campus Life & Pride</span>
+                <h2>Student Achievements & Clubs</h2>
+                <p>Our students consistently excel in national hackathons, university ranks, sports, and technical competitions.</p>
+            </div>
+
+            <div class="student-layout">
+                <div class="achievements-list">
+                    <div class="achievement-card">
+                        <span class="ach-badge">Smart India Hackathon 2026</span>
+                        <h3>1st Place – Hardware Edition</h3>
+                        <p>Team "VoltGrid" (Final Year EEE & ECE) won ₹1,00,000 cash prize for developing a low-cost smart microgrid fault detector.</p>
+                        <span class="ach-names">Ananya R., Vignesh K., Harish M., Pooja S.</span>
+                    </div>
+
+                    <div class="achievement-card">
+                        <span class="ach-badge">Anna University Gold Medal</span>
+                        <h3>University 1st Rank in B.E. CSE</h3>
+                        <p>Secured 9.74 CGPA across 8 semesters and published two IEEE conference papers on edge computing security.</p>
+                        <span class="ach-names">Siddharth Venkataraman (Batch of 2026)</span>
+                    </div>
+
+                    <div class="achievement-card">
+                        <span class="ach-badge">SAE BAJA India</span>
+                        <h3>Best Endurance Award – All-Terrain Vehicle</h3>
+                        <p>Designed, fabricated, and raced a custom single-seater off-road buggy at the national endurance track in Indore.</p>
+                        <span class="ach-names">Team Garuda Motorsports (Dept. of Mechanical Engg.)</span>
+                    </div>
+                </div>
+
+                <div class="student-portal-box">
+                    <h3>Student Information & Quick Links</h3>
+                    <p>Access essential academic services, exam results, and campus clubs directly.</p>
+                    <ul class="portal-links">
+                        <li><strong>Academic Calendar 2026-27:</strong> Odd & Even semester working days and CIA test dates.</li>
+                        <li><strong>Placement & Training Cell:</strong> Aptitude training, mock interviews, and recruiter schedules.</li>
+                        <li><strong>Active Student Chapters:</strong> IEEE Student Branch, CSI, ISTE, NSS, and Rotaract Club.</li>
+                        <li><strong>Scholarship Desk:</strong> First-graduate fee concession, SC/ST scholarship, and merit-cum-means aid.</li>
+                    </ul>
+                    <div class="placement-mini-box">
+                        <div>
+                            <span>Highest Package</span>
+                            <strong>₹18.5 LPA</strong>
+                        </div>
+                        <div>
+                            <span>Average Package</span>
+                            <strong>₹5.4 LPA</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Events Section -->
+    <section id="events" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What's Happening</span>
+                <h2>Upcoming Events & Workshops</h2>
+                <p>Seminars, technical symposiums, hands-on workshops, and cultural festivals on campus.</p>
+            </div>
+
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-body">
+                        <span class="event-type">National Symposium</span>
+                        <h3>TechnoVanza 2026</h3>
+                        <p>Annual inter-college technical symposium featuring coding contests, circuit debugging, paper presentations, and robotics.</p>
+                        <div class="event-meta">Venue: Main Auditorium • 9:30 AM</div>
+                        <button class="btn btn-sm btn-outline register-event-btn" data-event="TechnoVanza 2026">Register Interest</button>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">14</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-body">
+                        <span class="event-type">Hands-on Workshop</span>
+                        <h3>Industrial IoT & Edge AI Bootcamp</h3>
+                        <p>Two-day practical workshop conducted by engineers from Bosch India on ESP32, MQTT protocols, and sensor telemetry.</p>
+                        <div class="event-meta">Venue: ECE Embedded Lab • 10:00 AM</div>
+                        <button class="btn btn-sm btn-outline register-event-btn" data-event="Industrial IoT & Edge AI Bootcamp">Register Interest</button>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">JAN</span>
+                    </div>
+                    <div class="event-body">
+                        <span class="event-type">Cultural Fest</span>
+                        <h3>Sangamam 2027</h3>
+                        <p>Two-day annual cultural extravaganza celebrating music, classical & western dance, theatre, fine arts, and photography.</p>
+                        <div class="event-meta">Venue: Open Air Theatre • 4:00 PM</div>
+                        <button class="btn btn-sm btn-outline register-event-btn" data-event="Sangamam 2027">Register Interest</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. About College Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Established 2002</span>
+                    <h2>About Vellore Institute of Engineering & Technology</h2>
+                    <p>Founded in 2002 by the Sri Balaji Educational Trust, VIET started with three undergraduate engineering branches and 180 students. Today, it stands as a premier autonomous institution spread across a green 65-acre campus.</p>
+                    <p>Our academic framework emphasizes outcome-based education, continuous internal assessment, and mandatory project-based learning from the second year onwards.</p>
+
+                    <div class="vision-mission">
+                        <div class="vm-box">
+                            <h4>Our Vision</h4>
+                            <p>To emerge as a centre of excellence in technical education and applied research, nurturing competent and socially responsible engineers.</p>
+                        </div>
+                        <div class="vm-box">
+                            <h4>Our Mission</h4>
+                            <p>To impart quality engineering education through modern laboratories, industry collaboration, ethical values, and lifelong learning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infra-panel">
+                    <h3>Campus Infrastructure</h3>
+                    <div class="infra-list">
+                        <div class="infra-item">
+                            <strong>Central Digital Library</strong>
+                            <p>68,000+ print volumes, IEEE/Springer e-journals, and a 400-seat air-conditioned reading hall.</p>
+                        </div>
+                        <div class="infra-item">
+                            <strong>Hostels & Dining</strong>
+                            <p>Separate residential hostels for men and women with Wi-Fi, study halls, and hygienic vegetarian/non-vegetarian dining.</p>
+                        </div>
+                        <div class="infra-item">
+                            <strong>Transport Fleet</strong>
+                            <p>45 GPS-enabled college buses connecting Vellore, Katpadi, Ranipet, Arcot, and Tirupattur.</p>
+                        </div>
+                        <div class="infra-item">
+                            <strong>Sports & Healthcare</strong>
+                            <p>400m athletic track, indoor badminton stadium, cricket ground, and 24/7 on-campus medical clinic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Contact & Enquiry Section -->
+    <section id="contact" class="section bg-navy text-white">
+        <div class="container contact-grid">
+            <div class="contact-details">
+                <span class="section-tag tag-light">Get in Touch</span>
+                <h2>Admissions & Campus Contact</h2>
+                <p>Have questions about admissions, fee structure, scholarships, or campus visits? Reach out to our admissions desk.</p>
+
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <strong>Campus Address</strong>
+                        <p>Vellore Institute of Engineering & Technology,<br>NH-48, Chennai–Bengaluru Highway, Katpadi Taluk,<br>Vellore – 632014, Tamil Nadu, India.</p>
+                    </div>
+                    <div class="info-block">
+                        <strong>Phone & Admissions Helpline</strong>
+                        <p>Landline: 0416 - 224 5890 / 224 5891<br>Admissions Mobile: +91 98423 71045</p>
+                    </div>
+                    <div class="info-block">
+                        <strong>Email & Office Hours</strong>
+                        <p>Admissions: admissions@vietvellore.edu.in<br>General: info@vietvellore.edu.in<br>Mon – Sat: 9:00 AM to 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="enquiry-form-card">
+                <h3>Student Admission / General Enquiry</h3>
+                <form id="enquiry-form" novalidate>
+                    <div class="form-group">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" name="fullName" placeholder="Enter student or parent name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Mobile Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course-select">Programme Interested In *</label>
+                        <select id="course-select" name="course" required>
+                            <option value="">-- Select a Programme --</option>
+                            <option value="B.E. CSE">B.E. Computer Science & Engineering</option>
+                            <option value="B.E. ECE">B.E. Electronics & Communication Engineering</option>
+                            <option value="B.E. EEE">B.E. Electrical & Electronics Engineering</option>
+                            <option value="B.E. Mechanical">B.E. Mechanical Engineering</option>
+                            <option value="B.E. Civil">B.E. Civil Engineering</option>
+                            <option value="B.Tech IT">B.Tech. Information Technology</option>
+                            <option value="M.E. / M.Tech">M.E. / M.Tech Programmes</option>
+                            <option value="MBA">Master of Business Administration (MBA)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Query *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Ask about eligibility, TNEA counselling code, hostel, or scholarships..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-teal btn-full">Submit Enquiry</button>
+                    <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="brand-logo footer-logo">VIET</div>
+                <p class="footer-desc">Approved by AICTE, New Delhi • Affiliated to Anna University, Chennai • TNEA Counselling Code: 2748</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Institution</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#courses">Fee Structure & Courses</a></li>
+                    <li><a href="#faculty">Faculty Directory</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Student Corner</h4>
+                <ul>
+                    <li><a href="#students">Placements & Achievements</a></li>
+                    <li><a href="#events">Symposiums & Events</a></li>
+                    <li><a href="#contact">Anti-Ragging Committee</a></li>
+                    <li><a href="#contact">Mandatory Disclosure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Vellore Institute of Engineering & Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Department / Event Details Modal -->
+    <div class="modal-overlay" id="info-modal" aria-hidden="true">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <span class="section-tag" id="modal-tag">Department Overview</span>
+            <h3 id="modal-title">Department Name</h3>
+            <div id="modal-body" class="modal-body"></div>
+            <div class="modal-actions">
+                <a href="#contact" class="btn btn-primary" id="modal-enquire-btn">Enquire About This</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
